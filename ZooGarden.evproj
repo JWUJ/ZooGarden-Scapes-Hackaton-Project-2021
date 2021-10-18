@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project version="3.4.1">
+ <presentationParams>
+  <parameter name="enableStatistics" value="true"/>
+  <parameter name="flipFrames">
+   <field name="x" value="false"/>
+   <field name="y" value="false"/>
+  </parameter>
+  <parameter name="clipPlanes">
+   <field name="near" value="0.01"/>
+   <field name="far" value="10"/>
+  </parameter>
+  <parameter name="useMainCamera" value="true"/>
+  <parameter name="clearColor">
+   <field name="x" value="0.7"/>
+   <field name="y" value="0.7"/>
+   <field name="z" value="0.7"/>
+   <field name="w" value="1"/>
+  </parameter>
+ </presentationParams>
+ <resources dir="resources_ZooGarden">
+  <resource internal="false" id="616d2268-38e-2df-8a5-e6b" kind="font" local="false" forceExport="false" rawAssetsExport="false" name="JostVariableFont.ttf">
+   <filename value="JostVariableFont.ttf"/>
+   <source value="C:\Users\stovo\Documents\GitHub\ZooGarden-Hackaton-Project\Objects\Fonts\Jost\JostVariableFont.ttf"/>
+  </resource>
+  <resource internal="false" id="616d2406-a84-c46-47f-cdb" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="Welcome Button Animated.fbx">
+   <filename value="Welcome Button Animated.fbx"/>
+   <source value="C:\Users\stovo\Documents\GitHub\ZooGarden-Hackaton-Project\Objects\3D Models\Welcome Button Animated.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="616d276a-db4-585-a79-729" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="Tiger.fbx">
+   <filename value="Tiger.fbx"/>
+   <source value="C:\Users\stovo\Documents\GitHub\ZooGarden-Hackaton-Project\Objects\3D Models\Tiger.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="616d2e3e-fe4-6c3-c58-ad9" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="Missions Button Animated.fbx">
+   <filename value="Missions Button Animated.fbx"/>
+   <source value="C:\Users\stovo\Documents\GitHub\ZooGarden-Hackaton-Project\Objects\3D Models\Missions Button Animated.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="616d30f1-72f-716-696-ecb" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="Info Button Animated.fbx">
+   <filename value="Info Button Animated.fbx"/>
+   <source value="C:\Users\stovo\Documents\GitHub\ZooGarden-Hackaton-Project\Objects\3D Models\Info Button Animated.fbx"/>
+   <optimizations/>
+  </resource>
+  <resource internal="false" id="616d315e-315-251-6b7-ba9" kind="model" local="false" forceExport="false" rawAssetsExport="false" name="Coins Button Animated.fbx">
+   <filename value="Coins Button Animated.fbx"/>
+   <source value="C:\Users\stovo\Documents\GitHub\ZooGarden-Hackaton-Project\Objects\3D Models\Coins Button Animated.fbx"/>
+   <optimizations/>
+  </resource>
+ </resources>
+ <reactors>
+  <order>
+   <item id="616d3230-f645-8bc1-f895"/>
+   <item id="616d322c-1d29-38a7-ebb6"/>
+   <item id="Scene"/>
+  </order>
+  <reactor id="616d207d-591d-815c-f65d" name="Welcome form" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x00000010"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="616d257f-f2fe-29b4-59e9"/>
+    <item value="616d257b-15ca-c122-7c9e"/>
+    <item value="616d2446-49bc-a3a5-5318"/>
+    <item value="616d2576-97d4-5a4f-6481"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%c"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+  </reactor>
+  <reactor id="616d2298-28a2-882d-411d" name="Form_Welcome_Model_Button_Welcome" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.6"/>
+    <field name="y" value="0.46153846153846"/>
+    <field name="z" value="0.46153846153846"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="60"/>
+   <parameter name="model" value="616d2406-a84-c46-47f-cdb"/>
+  </reactor>
+  <reactor id="616d2446-49bc-a3a5-5318" name="Button Welcome" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="616d2298-28a2-882d-411d"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.size">
+    <field name="x" value="keep-aspect"/>
+    <field name="y" value="18.000000%c"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%c"/>
+    <field name="y" value="0.000000%c"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="keep-aspect"/>
+    <field name="right" value="keep-aspect"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+  </reactor>
+  <reactor id="616d2576-97d4-5a4f-6481" name="Tiger" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="616d2577-f285-1fda-74f5"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="10.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+  </reactor>
+  <reactor id="616d2577-f285-1fda-74f5" name="Form_Welcome_Model_Tiger" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0.4"/>
+    <field name="y" value="-1"/>
+    <field name="z" value="1"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="0"/>
+    <field name="y" value="180"/>
+    <field name="z" value="180"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="0.035"/>
+    <field name="y" value="0.035"/>
+    <field name="z" value="0.035"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="616d276a-db4-585-a79-729"/>
+  </reactor>
+  <reactor id="616d257b-15ca-c122-7c9e" name="Title" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%c"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%c"/>
+    <field name="y" value="-300.000000%c"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="Приветствую вас в ЗооСаде&#10;"/>
+   <parameter name="text.font_id" value="616d2268-38e-2df-8a5-e6b"/>
+   <parameter name="text.font_size" value="6.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+  </reactor>
+  <reactor id="616d257f-f2fe-29b4-59e9" name="Description" type="rect.text" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-bottom"/>
+   <parameter name="rect.size">
+    <field name="x" value="70.000000%c"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="0.75"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000%"/>
+    <field name="y" value="20.000000%"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <parameter name="text.value" value="В этом приложении вы узнаете много нового о животных)"/>
+   <parameter name="text.font_id" value="616d2268-38e-2df-8a5-e6b"/>
+   <parameter name="text.font_size" value="5.000000%vw"/>
+   <parameter name="text.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="1"/>
+   </parameter>
+   <parameter name="text.align" value="center-center"/>
+   <parameter name="text.auto_wrap" value="true"/>
+   <parameter name="text.line_spacing" value="0.15"/>
+  </reactor>
+  <reactor id="616d2d8b-e9ac-7e9d-32a7" name="Main form" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="616d3146-3e3a-7a69-9ca3"/>
+    <item value="616d30c3-f917-53cc-448a"/>
+    <item value="616d2ddb-7b35-cb8f-a594"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="center-center"/>
+   <parameter name="rect.size">
+    <field name="x" value="100.000000%c"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="0"/>
+    <field name="green" value="0"/>
+    <field name="blue" value="0"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="0.000000px"/>
+    <field name="y" value="0.000000px"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="0.000000px"/>
+    <field name="right" value="0.000000px"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="616d2ddb-7b35-cb8f-a594" name="Missions" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="616d2de0-cc44-a8de-a8fa"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="8.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-39.000000%c"/>
+    <field name="y" value="-1.000000%c"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="keep-aspect"/>
+    <field name="right" value="keep-aspect"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="616d2de0-cc44-a8de-a8fa" name="Form_Main_Model_Button_Missions" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0.5"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1.0371373908271"/>
+    <field name="y" value="1.0371373908271"/>
+    <field name="z" value="1.0371373908271"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="616d2e3e-fe4-6c3-c58-ad9"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="616d30c3-f917-53cc-448a" name="Info" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="616d30d6-a532-ce3c-2423"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="right-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="8.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="-30.000000%c"/>
+    <field name="y" value="-1.000000%c"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="keep-aspect"/>
+    <field name="right" value="keep-aspect"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="616d30d6-a532-ce3c-2423" name="Form_Main_Model_Button_Info" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0.5"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1.0371373908271"/>
+    <field name="y" value="1.0371373908271"/>
+    <field name="z" value="1.0371373908271"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="616d30f1-72f-716-696-ecb"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="616d3146-3e3a-7a69-9ca3" name="Coins" type="node.rect" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="616d314a-87f9-2797-c21b"/>
+   </parameter>
+   <parameter name="layer" value="0.01"/>
+   <parameter name="rect.position" value="left-top"/>
+   <parameter name="rect.size">
+    <field name="x" value="8.000000%"/>
+    <field name="y" value="keep-aspect"/>
+    <field name="policy" value="simple"/>
+   </parameter>
+   <parameter name="rect.color">
+    <field name="red" value="1"/>
+    <field name="green" value="1"/>
+    <field name="blue" value="1"/>
+    <field name="alpha" value="0"/>
+   </parameter>
+   <parameter name="rect.shift">
+    <field name="x" value="33.000000%c"/>
+    <field name="y" value="-1.000000%c"/>
+   </parameter>
+   <parameter name="rect.padding">
+    <field name="top" value="keep-aspect"/>
+    <field name="right" value="keep-aspect"/>
+    <field name="bottom" value="keep-aspect"/>
+    <field name="left" value="keep-aspect"/>
+   </parameter>
+   <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="616d314a-87f9-2797-c21b" name="Form_Main_Model_Button_Coins" type="node.model" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children"/>
+   <parameter name="trans">
+    <field name="x" value="0"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0.5"/>
+   </parameter>
+   <parameter name="rotate">
+    <field name="x" value="90"/>
+    <field name="y" value="0"/>
+    <field name="z" value="0"/>
+   </parameter>
+   <parameter name="scale">
+    <field name="x" value="1.0371373908271"/>
+    <field name="y" value="1.0371373908271"/>
+    <field name="z" value="1.0371373908271"/>
+   </parameter>
+   <parameter name="kdTrees" value="auto"/>
+   <parameter name="rig" value="auto"/>
+   <parameter name="morph" value="auto"/>
+   <parameter name="gpuInstancing" value="auto"/>
+   <parameter name="gpuInstancesMinCount" value="50"/>
+   <parameter name="model" value="616d315e-315-251-6b7-ba9"/>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="616d322c-1d29-38a7-ebb6" name="Counter" type="counter" enabled="true">
+   <parameter name="initialValue" value="0"/>
+  </reactor>
+  <reactor id="616d3230-f645-8bc1-f895" name="Buttons Timer" type="timer" enabled="true"/>
+  <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="616d2d8b-e9ac-7e9d-32a7"/>
+    <item value="616d207d-591d-815c-f65d"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+  <reactor id="Scene" name="Scene" type="node.scene" enabled="true">
+   <parameter name="nodeMask">
+    <field name="mask" value="0x0000001F"/>
+    <field name="unchangedBits" value="0x00000000"/>
+   </parameter>
+   <parameter name="children">
+    <item value="HeadUpDisplay"/>
+   </parameter>
+   <view expanded="true"/>
+  </reactor>
+ </reactors>
+ <exportParameters last="apk">
+  <parameters format="app" filename="C:/Users/stovo/Documents/GitHub/ZooGarden-Hackaton-Project/ZooGarden.app" appName="ZooGarden - EVI macOS App" appId="ZooGarden" arch="" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.1 Trial/studio_data//AppIcon.png" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.1 Trial/studio_data//LaunchImage.png" category="None" copyright="" runAfterExport="false" frameMode="window" supportedOrientations="1" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" samples="0" targetPlatform="1" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" retinaSupport="true" appStoreDistribution="false" bundleName="ZooGarden - EVI macOS App" cameraDescription="Дополненная реальность ждет!" photolibraryDescription="" deviceMotionDescription=""/>
+  <parameters format="apk" filename="C:/Users/stovo/Documents/GitHub/ZooGarden-Hackaton-Project/ZooGarden.apk" appName="ZooGarden - EVI Android App" appId="ZooGarden" arch="arm" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.1 Trial/studio_data//AppIcon.png" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.1 Trial/studio_data//LaunchImage.png" category="" copyright="" runAfterExport="false" frameMode="" supportedOrientations="1" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" samples="0" targetPlatform="1" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" retinaSupport="true" appStoreDistribution="false" bundleName="ZooGarden - EVI Android App" cameraDescription="" photolibraryDescription="" deviceMotionDescription="" HWCameraUsageMode="optional" ARCoreUsageMode="optional" gradleOpt="" selectedPreset="1" targetApi="30">
+   <presets>
+    <preset name="User Preset">
+     <files>
+      <file name="AndroidManifest.xml" path="${ANDROID_DATA_DIR}/AndroidManifest.xml.in"/>
+      <file name="build.gradle" path="${ANDROID_DATA_DIR}/build.gradle.in"/>
+      <file name="gradle.properties" path="${ANDROID_DATA_DIR}/gradle.properties.in"/>
+      <file name="local.properties" path="${ANDROID_DATA_DIR}/local.properties.in"/>
+     </files>
+    </preset>
+   </presets>
+  </parameters>
+  <parameters format="exe" filename="C:/Users/stovo/Documents/GitHub/ZooGarden-Hackaton-Project/ZooGarden.exe" appName="ZooGarden - EVI Windows App" appId="ZooGarden" arch="x64" version="1.0" build="1" configurationFile="" appIconPath="C:/Program Files/EligoVision Toolbox 3.4.1 Trial/studio_data//AppIcon.ico" loadingImagePath="C:/Program Files/EligoVision Toolbox 3.4.1 Trial/studio_data//LaunchImage.png" category="" copyright="" runAfterExport="false" frameMode="window" supportedOrientations="1" frameSize.width="1280" frameSize.height="720" frameShift.x="0" frameShift.y="0" samples="0" targetPlatform="1" startOnLastDisplay="false" noborder="false" alwaysOnTop="false" createInstaller="false" frameSize.maximize="false" frameSize.ignoreWindowDecoration="true" frameShift.centering="true" retinaSupport="true" appStoreDistribution="false" bundleName="ZooGarden - EVI Windows App" cameraDescription="" photolibraryDescription="" deviceMotionDescription=""/>
+ </exportParameters>
+ <workspace>
+  <preview platform="1"/>
+ </workspace>
+</Project>
