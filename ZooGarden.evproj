@@ -51,13 +51,15 @@
  </resources>
  <reactors>
   <order>
+   <item id="System"/>
+   <item id="616f4f06-aeaf-78f2-9e39"/>
    <item id="616d3230-f645-8bc1-f895"/>
    <item id="616d322c-1d29-38a7-ebb6"/>
    <item id="Scene"/>
   </order>
   <reactor id="616d207d-591d-815c-f65d" name="Welcome form" type="node.rect" enabled="true">
    <parameter name="nodeMask">
-    <field name="mask" value="0x00000010"/>
+    <field name="mask" value="0x0000001F"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
@@ -90,6 +92,7 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
   </reactor>
   <reactor id="616d2298-28a2-882d-411d" name="Form_Welcome_Model_Button_Welcome" type="node.model" enabled="true">
    <parameter name="nodeMask">
@@ -151,6 +154,7 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
   </reactor>
   <reactor id="616d2576-97d4-5a4f-6481" name="Tiger" type="node.rect" enabled="true">
    <parameter name="nodeMask">
@@ -184,6 +188,7 @@
     <field name="left" value="keep-aspect"/>
    </parameter>
    <parameter name="rect.scalePolicy" value="inherit"/>
+   <view expanded="true"/>
   </reactor>
   <reactor id="616d2577-f285-1fda-74f5" name="Form_Welcome_Model_Tiger" type="node.model" enabled="true">
    <parameter name="nodeMask">
@@ -253,7 +258,7 @@
     <field name="alpha" value="1"/>
    </parameter>
    <parameter name="text.align" value="center-center"/>
-   <parameter name="text.auto_wrap"/>
+   <parameter name="text.auto_wrap" value="false"/>
    <parameter name="text.line_spacing" value="0.15"/>
   </reactor>
   <reactor id="616d257f-f2fe-29b4-59e9" name="Description" type="rect.text" enabled="true">
@@ -301,7 +306,7 @@
   </reactor>
   <reactor id="616d2d8b-e9ac-7e9d-32a7" name="Main form" type="node.rect" enabled="true">
    <parameter name="nodeMask">
-    <field name="mask" value="0x0000001F"/>
+    <field name="mask" value="0x00000010"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
@@ -337,7 +342,7 @@
   </reactor>
   <reactor id="616d2ddb-7b35-cb8f-a594" name="Missions" type="node.rect" enabled="true">
    <parameter name="nodeMask">
-    <field name="mask" value="0x0000001F"/>
+    <field name="mask" value="0x00000010"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
@@ -400,7 +405,7 @@
   </reactor>
   <reactor id="616d30c3-f917-53cc-448a" name="Info" type="node.rect" enabled="true">
    <parameter name="nodeMask">
-    <field name="mask" value="0x0000001F"/>
+    <field name="mask" value="0x00000010"/>
     <field name="unchangedBits" value="0x00000000"/>
    </parameter>
    <parameter name="children">
@@ -528,6 +533,7 @@
    <parameter name="initialValue" value="0"/>
   </reactor>
   <reactor id="616d3230-f645-8bc1-f895" name="Buttons Timer" type="timer" enabled="true"/>
+  <reactor id="616f4f06-aeaf-78f2-9e39" name="Form Timer" type="timer" enabled="true"/>
   <reactor id="HeadUpDisplay" name="HeadUpDisplay" type="node.hud" enabled="true">
    <parameter name="nodeMask">
     <field name="mask" value="0x0000001F"/>
@@ -548,6 +554,9 @@
     <item value="HeadUpDisplay"/>
    </parameter>
    <view expanded="true"/>
+  </reactor>
+  <reactor id="System" name="System" type="system" enabled="true">
+   <parameter name="albumName" value="evi_app"/>
   </reactor>
  </reactors>
  <exportParameters last="apk">
